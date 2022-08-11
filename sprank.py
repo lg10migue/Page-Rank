@@ -30,7 +30,7 @@ for node in from_ids:
     row = cur.fetchone()
     prev_ranks[node] = row[0]
 
-sval = input( "How many iterations:" )
+sval = input( "How many iterations: " )
 many = 1
 if ( len( sval ) > 0 ): many = int( sval )
 
@@ -84,7 +84,7 @@ for i in range( many ):
     totdiff = 0
     for ( node, old_rank ) in list( prev_ranks.items() ):
         new_rank = next_ranks[node]
-        diff = abs( old_rank-new_rank )
+        diff = abs( old_rank - new_rank )
         totdiff = totdiff + diff
 
     avediff = totdiff / len( prev_ranks )

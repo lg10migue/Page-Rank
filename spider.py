@@ -52,7 +52,7 @@ print( webs )
 many = 0
 while True:
     if ( many < 1 ) :
-        sval = input( "How many pages:" )
+        sval = input( "How many pages: " )
         if ( len( sval ) < 1 ) : break
         many = int( sval )
     many = many - 1
@@ -95,7 +95,7 @@ while True:
         break
     except:
         print( "Unable to retrieve or parse page" )
-        cur.execute( "UPDATE Pages SET error=-1 WHERE url=?", (url, ) )
+        cur.execute( "UPDATE Pages SET error=-1 WHERE url=?", ( url, ) )
         conn.commit()
         continue
 
