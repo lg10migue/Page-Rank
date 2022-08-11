@@ -133,3 +133,7 @@ dmypy.json
 
 # Spider JS
 spider.js
+
+# Images
+*.JPG
+*.PNG
